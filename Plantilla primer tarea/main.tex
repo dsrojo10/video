@@ -13,15 +13,15 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Título del trabajo}
+        \textbf{Parcial 1 - Calistenia (15`/,)}
             
         \vspace{0.5cm}
         \LARGE
-        Subtítulo
+        %Subtítulo
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{David Santiago Rojo Castrillon}
             
         \vfill
             
@@ -31,78 +31,30 @@
         Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
         Universidad de Antioquia\\
         Medellín\\
-        Marzo de 2021
+        09 de Marzo de 2021
             
     \end{center}
 \end{titlepage}
 
 \tableofcontents
 \newpage
-\section{Sección introductoria}\label{intro}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
+\section{Problema a resolver:}\label{intro}
+Describa detalladamente el procedimiento que debe seguir una persona cualqueira para llevar dos tarjetas desde una posicion inicial (la cual será reposadas sobre una mesa) y llevarlas a una posición final (en forma de piramide) todo esto usando una sola mano.
 
-\section{Sección de contenido} \label{contenido}
-Esta sección es para agregar toda la información correspondiente con código, citas, etc.
-\subsection{Citación}
-Vamos a citar por ejemplo un artículo de \textbf{Albert Einstein} \cite{einstein}.
-También es posible citar libros \cite{dirac} o documentos en línea \cite{knuthwebsite}.\\\\
-Revisar en la última sección el formato de las referencias en IEEE.
 
-\subsection{Incluir código en el documento}
-%
-A continuación, se presenta el código \ref{codigo_ejemplo}, que nos permite incluir en el informe partes de programa que requieran una explicación adicional.
-\begin{lstlisting}[language=C++, label=codigo_ejemplo]
-// Programa desarrollado, compilado y ejecutado en https://www.onlinegdb.com
-#include <iostream>
+\section{Algoritmo} \label{contenido} 
+1. Ubicarnos en el borde de una mesa.\par
+2. Ponemos una hoja de papel sobre la mesa en posición horizontal, de tal forma que uno de los bordes largos de la hoja quedé posicionado encima del borde de la mesa (ósea la hoja a raz del borde de la mesa)\par
+3. Vamos a ubicar las dos tarjetas de la siguiente manera\par
+4. Las rotamos de forma tal que los extremos cortos de las tarjetas queden en el borde de la mesa (es indiferente que borde de la mesa, simplemente el que nos quede más próximo y de frente)\par
+5. Ahora vamos a posicionar una tarjeta encima de otra de la siguiente manera: la número 1 (la cuál irá abajo de la otra, es indiferente cual sea la 1 y la 2) debe ser desplazada aprox 1cm del borde (que quede 1 cm de la tarjeta salidos de la mesa)\par
+6. Después ubicamos la 2da tarjeta encima de esa de la misma forma pero esta vez no 1cm sino 1,5cm (que la tarjeta número 2 que es la que va encima quedé un poco más salida que la que está abajo)\par
+7. Ya que tengamos las dos tarjetas ubicadas una encima de la otra, la que está abajo a 1 cm y la que está encima a 1,5 cm, ahora con con nuestros dedos índice y pulgar (de la mano más hábil) las vamos a coger por el borde corto que está salido de la mesa y las vamos a levantar (las dos al mismo tiempo, el pulgar debe ser el dedo que este tocando la tarjeta que esta arriba)\par
+8. Al levantarlas debemos hacer un poco de presión con nuestro dedo pulgar a la tarjeta que esta encima, por la pequeña diferencia de posición que hay entre una tarjeta y otra, el borde que tenemos más alejado tiende a levantarse, formando un tipo de V acostada con las dos tarjetas de esta forma ( < ), está es precisamente la posición que buscamos\par
+9. Al tenerla levantada en el aire debemos rotar nuestra mano buscando que el extremo dónde las puntas estás separadas quedé contra la mesa, buscando formar está figura ( ∆ ).\par
+10. Luego debemos buscar estabilidad en esta pirámide hasta encontrar el momento preciso para soltarlas\par
 
-/*
- * Esto es un comentario de varias lineas
- */
 
-// Comentario de una sola linea
 
-#define N 10
-
-using namespace std;
-
-int main()
-{
-    
-    for( int i = 0 ; i < N ; i++ ){
-        
-        if( !(i % 2) )
-            cout << " El valor de i es -> " << i << endl;
-    }
-    
-    return 0;
-}
-
-//Resultado programa
-
-/*
-El valor de i es -> 0
-El valor de i es -> 2
-El valor de i es -> 4
-El valor de i es -> 6
-El valor de i es -> 8
-*/
-\end{lstlisting}
-En la sección \ref{imagenes}, se presentará como añadir ilustraciones al texto.
-
-\section{Inclusión de imágenes} \label{imagenes}
-
-En la Figura (\ref{fig:cpplogo}), se presenta el logo de C++ contenido en la carpeta images.
-
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
-
-Las secciones (\ref{intro}), (\ref{contenido}) y (\ref{imagenes}) dependen del estilo del documento.
-
-\bibliographystyle{IEEEtran}
-\bibliography{references}
 
 \end{document}
